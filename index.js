@@ -6,7 +6,6 @@ const data = require('./data');
 const generateSwissQrcode = async () => {
 	const dataString = await createDataString(data);
 	const xml = await createXml(dataString);
-	console.log(xml);
 	const svg = await createSvg(xml);
 };
 
